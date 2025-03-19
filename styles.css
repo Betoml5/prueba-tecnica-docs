@@ -241,6 +241,13 @@ dialog .dialog__package {
   width: 100%;
 
   background-color: var(--modal-card-color);
+
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+dialog .dialog__package:hover {
+  background-color: #f0f0f0;
 }
 
 dialog .dialog__package > p:first-of-type {
@@ -305,6 +312,8 @@ dialog button {
   font-size: 1rem;
   padding: 8px 24px;
   border-radius: 999px;
+
+  cursor: pointer;
 }
 
 dialog > div > div p:last-of-type {
@@ -345,6 +354,7 @@ dialog .dialog__package:last-child > div > p:nth-of-type(1) {
   dialog .dialog__packages {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
 
     gap: 10px;
   }
