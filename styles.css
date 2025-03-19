@@ -1,0 +1,426 @@
+:root {
+  --primary-color: #2d4ec4;
+  --secondary-color: #83cb2b;
+  --modal-card-color: #d9eaf3;
+  --modal-text-color: #387ab2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  text-align: center;
+  font-size: 2.8rem;
+
+  margin-bottom: 38px;
+}
+
+.main {
+  padding: 10px;
+  margin: 10px;
+}
+
+.main__features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin: 10px;
+}
+.main__features-item i {
+  font-size: 5rem;
+}
+
+.main__features-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  flex: 1;
+
+  font-size: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+
+  margin: 10px 0px;
+  padding: 40px;
+}
+
+.main__features-item p {
+  margin-top: 16px;
+}
+
+.main__video {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px;
+}
+
+.main__video-benefits {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2;
+  margin: 10px;
+
+  font-size: 2rem;
+}
+
+.main__video-benefits ul {
+  list-style: none;
+}
+
+.main__video-benefits ul span {
+  font-weight: bold;
+}
+
+.main__video-benefits ul li {
+  margin: 10px 0px;
+}
+
+.main__video-benefits ul li p {
+  margin-left: 32px;
+}
+
+.main__video-benefits ul li::before {
+  content: "\f058";
+  margin-right: 10px;
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+}
+
+.main__steps {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+
+  gap: 2;
+
+  background-color: var(--primary-color);
+
+  color: #fff;
+
+  padding: 20px;
+  margin: 10px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.main__steps > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 10px 0px;
+}
+
+.main__steps > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 10px 0px;
+}
+
+.main__steps > div > div p:first-child {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.main__steps div > div:last-child {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.main__steps i {
+  font-size: 5rem;
+}
+
+.main__modal-trigger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10px;
+}
+
+.main__modal-trigger p {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.main__modal-trigger > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__modal-trigger button {
+  border: none;
+  background: none;
+
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.main__modal-trigger button:first-child {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.main__modal-trigger button:last-child {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+dialog {
+  position: relative;
+
+  flex-direction: column;
+
+  backdrop-filter: blur(10px);
+  border: 1px solid #ccc;
+
+  padding: 20px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 80%;
+  max-width: 600px;
+
+  border-radius: 12px;
+}
+
+dialog h3 {
+  font-size: 2.4rem;
+}
+
+dialog i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+}
+
+dialog .dialog__package {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 8px;
+  margin: 10px 0px;
+  padding: 20px;
+
+  width: 100%;
+
+  background-color: var(--modal-card-color);
+}
+
+dialog .dialog__package > p:first-of-type {
+  color: var(--modal-text-color);
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+dialog .dialog__package div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+dialog .dialog__packages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+dialog .dialog__package > div {
+  display: flex;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0.5;
+}
+
+dialog .dialog__package > p {
+  color: var(--modal-text-color);
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+dialog > div > div span:nth-of-type(1) {
+  font-size: 1rem;
+}
+
+dialog > div > div span:nth-of-type(2) {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+dialog button {
+  border: none;
+  background: var(--modal-text-color);
+
+  color: #fff;
+
+  width: fit-content;
+
+  align-self: center;
+  justify-self: center;
+
+  margin-top: 10px;
+  font-size: 1rem;
+  padding: 8px 24px;
+  border-radius: 999px;
+}
+
+dialog > div > div p:last-of-type {
+  color: #5e6164;
+}
+
+dialog .dialog__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+
+  background: none;
+  border: none;
+  color: #000;
+  padding: unset;
+  cursor: pointer;
+}
+
+dialog .dialog__package:last-child > div > p:nth-of-type(1) {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+@media (min-width: 768px) {
+  .main__features {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  dialog {
+    width: 100%;
+    max-width: 1400px;
+  }
+
+  dialog .dialog__packages {
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+  }
+
+  dialog > div > p {
+    font-size: 2.4rem;
+  }
+
+  dialog .dialog__package > p:first-of-type {
+    font-size: 3rem;
+  }
+
+  dialog .dialog__package > div > p {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  dialog .dialog__package > div > span:nth-of-type(2) {
+    font-size: 3.8rem;
+  }
+
+  dialog > div > div button {
+    font-size: 1.8rem;
+  }
+
+  dialog .dialog__package > div > p span:nth-of-type(1) {
+    font-size: 2.4rem;
+  }
+
+  dialog .dialog__package > div > p span:nth-of-type(2) {
+    font-size: 4.4rem;
+  }
+
+  dialog .dialog__package:last-child > div > p:nth-of-type(1) {
+    font-size: 2rem;
+  }
+
+  .main__video {
+    flex-direction: row;
+  }
+
+  .main__video video {
+    width: 60%;
+  }
+
+  .main__video > div {
+    flex: 1;
+    margin-left: 32px;
+  }
+
+  .main__steps {
+    flex-direction: row;
+    align-items: center;
+  }
+  .main__steps > div {
+    flex: 1;
+  }
+
+  .main__modal-trigger {
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+
+  .main__modal-trigger p {
+    text-align: center;
+    width: 50%;
+  }
+
+  .main__modal-trigger > div {
+    flex-direction: row;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .main__modal-trigger > div button {
+    border-radius: 999px;
+    font-weight: bold;
+  }
+}

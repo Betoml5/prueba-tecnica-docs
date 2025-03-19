@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Docs Digitales</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://png.pngtree.com/png-vector/20220630/ourmid/pngtree-abstract-swoosh-infinity-logo-illustration-design-png-image_5587772.png"
+        alt="Logo de la empresa"
+      />
+      <p>¡Nuevo servicio!</p>
+      <p>Encárgate de tu negocio, nosotros de tu contabilidad</p>
+    </header>
+    <main>
+      <dialog>
+        <button id="dialog-close" class="dialog__close">
+          <i class="fa-solid fa-close"></i>
+        </button>
+        <h3>Paquetes</h3>
+        <div class="dialog__packages">
+          <div class="dialog__package">
+            <p>Emprendedor</p>
+            <hr />
+            <div>
+              <p>
+                <span>$</span>
+                <span>1,000</span>
+                <span>+ IVA/mes</span>
+              </p>
+              <p>1 - 30 movimientos bancarios al mes</p>
+              <button>Elegir</button>
+            </div>
+          </div>
+          <div class="dialog__package">
+            <p>Emprendedor Plus</p>
+            <hr />
+            <div>
+              <p>
+                <span>$</span>
+                <span>2,000</span>
+                <span>+ IVA/mes</span>
+              </p>
+              <p>31 - 100 movimientos bancarios al mes</p>
+              <button>Elegir</button>
+            </div>
+          </div>
+          <div class="dialog__package">
+            <p>Empresarial</p>
+            <hr />
+            <div>
+              <p>
+                <span>$</span>
+                <span>3,000</span>
+                <span>+ IVA/mes</span>
+              </p>
+              <p>101 - 300 movimientos bancarios al mes</p>
+              <button>Elegir</button>
+            </div>
+          </div>
+          <div class="dialog__package">
+            <p>Select</p>
+            <hr />
+            <div>
+              <p>Contactanos para hacer un paquete a tus necesidades</p>
+              <p>+300 movimientos bancarios al mes</p>
+              <button>Cotizar paquete</button>
+            </div>
+          </div>
+        </div>
+      </dialog>
+      <section class="main__features">
+        <div class="main__features-item">
+          <i class="fa-solid fa-calculator"></i>
+          <p>Hacemos tu contabilidad mensual</p>
+        </div>
+        <div class="main__features-item">
+          <i class="fa-solid fa-percent"></i>
+          <p>Calculamos tus impuestos</p>
+        </div>
+        <div class="main__features-item">
+          <i class="fa-solid fa-money-bill"></i>
+          <p>Presentamos tus declaraciones SAT</p>
+        </div>
+        <div class="main__features-item">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          <p>Calculo, timbrado y envió de nómina</p>
+        </div>
+      </section>
+
+      <section class="main__video">
+        <video controls src="./assets/videos/test.mov"></video>
+        <div class="main__video-benefits">
+          <h3>Beneficios</h3>
+          <ul>
+            <li>
+              <span>Automático</span>
+              <p>
+                Ahorra tiempo al eliminar la tarea de enviar facturas a tu
+                contador ¡El proceso es automático!
+              </p>
+            </li>
+            <li>
+              <span>Servicio Oportuno</span>
+              <p>
+                Comunicación mas fácil y efectiva con tu controlador personal
+              </p>
+            </li>
+            <li>
+              <span>Simplicidad</span>
+              <p>Información contable en tiempo real</p>
+            </li>
+            <li>
+              <span>Confiable</span>
+              <p>
+                Cálculos hechos por uno de nuestros contadores expertos asignado
+                especialmente para tu negocio
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="main__steps">
+        <div>
+          <i class="fa-solid fa-pen-fancy"></i>
+          <div>
+            <p class="main__steps-step-text">Paso 1</p>
+            <p>Agregue tu FIEL</p>
+          </div>
+        </div>
+        <div>
+          <i class="fa-solid fa-arrows-spin"></i>
+          <div>
+            <p class="main__steps-step-text">Paso 2</p>
+            <p>Sincroniza tus cuentas bancarias</p>
+          </div>
+        </div>
+        <div>
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <div>
+            <p class="main__steps-step-text">Paso 3</p>
+            <p>Recibe mensualmente tu declaración de impuestos</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__modal-trigger">
+        <p>
+          ¿Quieres cambiar a tu Conta? Nosotros nos encargamos de llevar a cabo
+          la transacción de toda tu contabilidad hasta el dia de hoy
+        </p>
+
+        <div>
+          <button id="btn-modal">Ver paquetes</button>
+          <button>Agenda una cita con un contador experto</button>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
